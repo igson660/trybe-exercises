@@ -1,0 +1,30 @@
+div:hover{ 
+    border-style: solid;
+    border-width: 5px;
+    border-color: chartreuse;
+}
+div:nth-child(5){
+    font-size: 30px;
+    color: coral;
+    background-color: darkgrey;
+}
+div:nth-child(3){
+        color: darkolivegreen;
+        background-color: darkmagenta;
+}
+div:nth-child(4){
+    color: yellow;
+    background-color: darkred;
+}
+div:nth-child(6){
+    color: rgb(182, 58, 145);
+    background-color: darkturquoise;
+}
+div:nth-child(7){
+    color: rgb(14, 28, 224);
+}
+
+div:nth-child(2n-1){
+    font-style: italic;
+    background-color: dimgrey;
+}
