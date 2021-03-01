@@ -1,5 +1,6 @@
 
 let estado = "aprovado";
+estado = "quase"
 
 switch (estado) {
     case "aprovado":
@@ -15,5 +16,5 @@ switch (estado) {
         break;
 
     default:
-    console.log("nda");
+    console.log("não se aplica");
 }
