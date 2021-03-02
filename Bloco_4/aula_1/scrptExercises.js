@@ -193,3 +193,6 @@ if (miniSalario <= 1903.98) {
 };
 
 console.log("Salário: " + (miniSalario - aliquotIR));
+
+
+//ultimas três questões resolvi uma parte só e complementei com o gabarito
