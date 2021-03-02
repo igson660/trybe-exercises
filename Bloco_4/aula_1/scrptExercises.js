@@ -146,3 +146,50 @@ if ((a % 2 === 0 && b % 2 === 0 && c % 2 === 0)) {
   all = false;
 };
 console.log(all);
+
+// Escreva um programa que se inicie com dois valores em duas variáveis diferentes: o custo de um produto e seu valor de venda. A partir dos valores, calcule quanto de lucro (valor de venda descontado o custo do produto) a empresa terá ao vender mil desses produtos.
+
+let custoProdruto = 12;
+let custoVenda = 15;
+
+let custoTotal = ( custoProdruto + ((custoProdruto * 20)/100));
+
+if (custoTotal >= 0 && custoVenda >= 0) {
+  let lucro = (custoVenda - custoTotal) * 1000;
+  console.log(lucro);
+} else {
+  console.log('erro, possui valores negativos');
+};
+
+//Uma pessoa que trabalha de carteira assinada no Brasil tem descontados de seu salário bruto o INSS e o IR. Faça um programa que, dado um salário bruto, calcule o líquido a ser recebido.
+let salarioBruto = 5326.50;
+
+let aliquotINSS;
+let aliquotIR;
+
+
+if (salarioBruto <= 1556.94) {
+  aliquotINSS = salarioBruto * 8 / 100;
+} else if (salarioBruto <= 2594.92) {
+  aliquotINSS = salarioBruto * 9 / 100;
+} else if (salarioBruto <= 5189.82) {
+  aliquotINSS = salarioBruto * 11 / 100;
+} else {
+  aliquotINSS = 570.88;
+}
+
+let miniSalario = salarioBruto - aliquotINSS;
+
+if (miniSalario <= 1903.98) {
+  aliquotIR = 0;
+} else if (miniSalario <= 2826.65) {
+  aliquotIR = (miniSalario * 7.5 / 100) - 142.80;
+} else if (miniSalario <= 3751.05) {
+  aliquotIR = (miniSalario * 15 / 100) - 354.80;
+} else if (miniSalario <= 4664.68) {
+  aliquotIR = (miniSalario * 22.5) - 636.13;
+} else {
+  aliquotIR = (miniSalario * 27.5 / 100) - 869.36;
+};
+
+console.log("Salário: " + (miniSalario - aliquotIR));
