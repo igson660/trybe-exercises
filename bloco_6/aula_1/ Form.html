@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="formStyle.css">
+  <title>Form</title>
+</head>
+<body>
+  <div>
+    <header>
+      <h1>Cadastro de Curriculo</h1>
+      <p>Cadastre aqui seu Curriculo</p>
+    </header>
+    <section>
+      <fieldset>
+        <legend>Dados Pessais</legend>
+        <label for="full-name">Name: </label>
+        <input type="text" maxlength="40" required placeholder="Full Name" id="full-name">
+        <br>
+        <br>
+
+        <label for="email">E-mail</label>: </label>
+        <input type="text" maxlength="50" required placeholder="igson660@gmail.com" id="email">
+        <br>
+        <br>
+
+        <label for="cpf">CPF: </label>
+        <input type="text" maxlength="11" required id="cpf" placeholder="1234567891-23">
+        <br>
+        <br>
+
+        <label for="endereco">Endereço: </label>
+        <input type="text" required maxlength="200" placeholder="bairro, rua , numero" id="endereco">
+        <br>
+        <br>
+
+        <label for="cidade">Cidade: </label>
+        <input type="text" required maxlength="28" placeholder="Rio branco" id="cidade">
+        <br>
+        <br>
+
+        <label for="estado">Estado: </label>
+        <select name="estado" id="estado"></select>
+      </fieldset>
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
