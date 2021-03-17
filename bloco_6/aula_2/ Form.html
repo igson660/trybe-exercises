@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/bulma-rtl.min.css">
+  <title>Form</title>
+</head>
+<body>
+  <header>
+    <h1 class="title is-1">Cadastro de Curriculo</h1>
+    <h4 class="subtitle is-4">Cadastre aqui seu Curriculo</h4>
+  </header>
+
+  <div class="field">
+    <div class="control">
+      <label for="full-name">Name: </label>
+      <input class="input" type="text" maxlength="40" required placeholder="Full Name" id="full-name">
+    </div>
+  </div>
+  <div class="field">
+    <div class="control">
+      <label for="email">E-mail</label>: </label>
+      <input class="input" type="text" maxlength="50" required placeholder="igson660@gmail.com" id="email">
+    </div>
+  </div>
+  <div class="field">
+    <div class="control">
+      <label for="cpf">CPF: </label>
+      <input class="input" type="text" maxlength="11" required id="cpf" placeholder="1234567891-23">
+    </div>
+  </div>
+  <div class="field">
+    <div class="control">
+      <label for="endereco">Endereço: </label>
+      <input class="input" type="text" required maxlength="200" placeholder="bairro, rua , numero" id="endereco">
+    </div>
+  </div>
+  <div class="field">
+    <div class="control">
+      <label for="cidade">Cidade: </label>
+      <input class="input" type="text" required maxlength="28" placeholder="Rio branco" id="cidade">
+    </div>
+  </div>
+  <div class="field">
+    <div class="control">
+      <label  class="checkbox"for="estado">Estado: </label>
+      <select name="estado" id="estado"></select>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
